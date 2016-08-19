@@ -1,0 +1,27 @@
+<div class="side-box">
+  <h2>Tags</h2>
+  <hr>
+</div>
+<div class="main-box">
+  <div id="question-day">
+    <h2>Question of the Day</h2>
+    <hr>
+    {{#each model as |question|}}
+      <p><strong>Question: </strong><span id="question-day-text">{{question.text}}</span></p>
+      <p id="question-day-author">- {{question.author}} <span id="question-day-timestamp">({{question.timestamp}})</span></p>
+    {{/each}}
+  </div>
+  <div id="question-list">
+    <div id="question-list-heading">
+      <h3>Questions</h3>
+      <h3>Author</h3>
+    </div>
+    <hr>
+      {{#each model as |question|}}
+        <div class="question-list-tile">
+          <p class="question-list-text">{{question.text}}</p>
+          <p>{{question.author}}</p>
+        </div>
+      {{/each}}
+  </div>
+</div>
