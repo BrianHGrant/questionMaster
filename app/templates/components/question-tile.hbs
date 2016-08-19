@@ -1,0 +1,5 @@
+<div class="question-list-tile">
+  <p class="question-list-text">{{#link-to 'question' question.id update="update"}}{{question.text}}{{/link-to}}</p>
+  <p>{{question.author}}</p>
+</div>
+{{update-question question=question update="update"}}

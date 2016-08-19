@@ -1,6 +1,12 @@
 $grey: grey;
 $green: #00CC63;
+$turquoise-trans: rgba(89,255,216,1);
+$body-background: #FF741A;
 
+body {
+  background-image: url('assets/img/question-mark.jpg');
+  background-size: 100% 100%;
+}
 .wrapper {
   width: 90%;
   margin: 60px 10px;
@@ -8,11 +14,23 @@ $green: #00CC63;
   flex-wrap: no-wrap;
   justify-content: space-between;
   .side-box {
+    background-color: $turquoise-trans;
     margin:20px 5px;
-    padding: 0 10px;
+    padding: 5px 10px;
     border: 2px solid $grey;
+    border-radius: 4px;
     width: 30%;
-    color: $green
+    color: $green;
+    display: flex;
+    flex-direction: column;
+    #side-box-form {
+      display: flex;
+      justify-content: center;
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+    }
   }
   .main-box {
     display: flex;
@@ -20,8 +38,10 @@ $green: #00CC63;
     margin: 20px 5px;
     width: 90%;
     #question-day {
+      background-color: $turquoise-trans;
       padding: 0 10px;
       border: 2px solid $grey;
+      border-radius: 4px;
       #question-day-text {
         font-style: italic;
       }
@@ -34,9 +54,11 @@ $green: #00CC63;
       }
     }
     #question-list {
-      margin-top: 10px;
+      background-color: $turquoise-trans;
+      // margin-top: 10px;
       padding: 0 10px;
       border: 2px solid $grey;
+      border-radius: 4px;
       #question-list-heading {
         display: flex;
         justify-content: space-between;
@@ -47,6 +69,53 @@ $green: #00CC63;
         .question-list-text {
           font-style: italic;
         }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    #question-content {
+      background-color: $turquoise-trans;
+      padding: 0 10px;
+      border: 2px solid $grey;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .question-author-info {
+        display: flex;
+        justify-content: space-between;
+      }
+      .question-notes {
+        padding-top: 5px;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border: 2px solid grey;
+        border-radius: 4px;
+        min-height: 100px;
+      }
+    }
+    #question-answers {
+      margin-top: 10px;
+      background-color: $turquoise-trans;
+      padding: 0 10px;
+      border: 2px solid $grey;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+    }
+    #update-question {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      .update-form {
+        margin-top: 10px;
+        background-color: $turquoise-trans;
+        padding: 10px 10px;
+        border: 2px solid $grey;
+        border-radius: 4px;
       }
     }
   }

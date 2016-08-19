@@ -16,7 +16,7 @@ module.exports = function(environment) {
       apiKey: "AIzaSyATzDgrPmguAz78y6vbtZZ3Aa-nJRgwQDI",
       authDomain: "questionmaster-15f6a.firebaseapp.com",
       databaseURL: "https://questionmaster-15f6a.firebaseio.com",
-      storageBucket: "questionmaster-15f6a.appspot.com",
+      storageBucket: "questionmaster-15f6a.appspot.com"
     },
 
     APP: {

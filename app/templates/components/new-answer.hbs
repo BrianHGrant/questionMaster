@@ -1,0 +1,26 @@
+
+  <div id="new-answer">
+    {{#if newAnswer}}
+      <form>
+        <div class="form-group">
+          <label for="text">Answer:</label>
+          {{textarea value=text id="text" class="form-control"}}
+        </div>
+        <div class="form-group">
+          <label for="author">Your Name:</label>
+          {{input value=author id="author" class="form-control"}}
+        </div>
+        <div class="form-group">
+          <label for="text">Additional Notes:</label>
+          {{textarea value=note id="note" class="form-control"}}
+        </div>
+        <div class="form-group">
+          <label for="timestamp">Time Stamp:</label>
+          {{input value=timestamp id="timestamp" class="form-control" type="date"}}
+         </div>
+        <button class="btn btn-primary" {{action 'saveAnswer'}}>Submit!</button>
+      </form>
+    {{else}}
+      <button class="btn btn-primary" {{action 'showAnswerForm'}}>Answer!</button>
+    {{/if}}
+  </div>

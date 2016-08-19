@@ -1,0 +1,27 @@
+<div class="side-box">
+  <h2>Ask the Master:</h2>
+  <div>
+    <hr>
+  </div>
+</div>
+<div class="main-box">
+  <div id="question-content">
+    <h2>{{model.text}}</h2>
+    <div class="question-author-info">
+      <h4>Author: {{model.author}}</h4>
+      <h4>Date: {{model.timestamp}}</h4>
+    </div>
+    <div>
+      <hr>
+    </div>
+    <label for="question-notes">Notes:</label>
+    <p class="question-notes">{{model.note}}</p>
+  </div>
+  <div id="question-answers">
+    <h2>Answers:</h2>
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </div>
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>
