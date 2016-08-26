@@ -2,6 +2,8 @@ import Ember from 'ember';
 import moment from 'moment';
 
 export default Ember.Component.extend({
+  userAuth: Ember.inject.service(),
+  
   actions: {
     saveQuestion() {
       var params = {

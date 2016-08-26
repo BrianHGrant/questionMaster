@@ -1,0 +1,7 @@
+{{#if userAuth.ifAuth}}
+  <h4>Name: {{userAuth.authUser.name}}</h4>
+  <h4>Email: {{userAuth.authUser.email}}</h4>
+{{else}}
+  <h4>Not logged in</h4>
+  {{#link-to 'login'}}Login/Create Account{{/link-to}}
+{{/if}}

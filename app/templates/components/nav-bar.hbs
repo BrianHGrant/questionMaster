@@ -19,7 +19,7 @@
             {{#link-to 'index' class="nav-item nav-link our-nav"}}Logout{{/link-to}}
           </li>
           <li>
-            {{#link-to 'index' class="nav-item nav-link our-nav"}}User Profile{{/link-to}}
+            {{#link-to 'index' class="nav-item nav-link our-nav"}}User Profile (<span id="userName">{{userAuth.authUser.name}}</span>){{/link-to}}
           </li>
         {{else}}
           <li>
