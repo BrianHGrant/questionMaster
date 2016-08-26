@@ -1,0 +1,13 @@
+<div id="user-login-form">
+  <form>
+    <div class="form-group">
+      <label for="author">Your Name:</label>
+      {{input value=author id="author" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="text">Email:</label>
+      {{input value=email id="email" class="form-control"}}
+    </div>
+    <button class="btn btn-primary" {{action 'loginUser'}}>Login</button>
+  </form>
+</div>

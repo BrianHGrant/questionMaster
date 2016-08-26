@@ -1,6 +1,8 @@
 <div class="question-list-tile">
-  <p class="question-list-text">{{#link-to 'question' question.id update="update"}}{{question.text}}{{/link-to}}</p>
+  <h4 class="question-list-text">{{#link-to 'question' question.id update="update"}}{{question.text}}{{/link-to}}</h4>
   <p>{{question.author}}</p>
 </div>
-{{update-question question=question update="update"}}
+{{#if userAuth.ifAuth}}
+  {{update-question question=question update="update"}}
+{{/if}}
 <hr>

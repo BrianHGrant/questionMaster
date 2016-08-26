@@ -1,12 +1,12 @@
 $grey: grey;
-$green: #00CC63;
-$turquoise-trans: rgba(186, 0, 43, 0.7);
+$green: black;
+$turquoise-trans: white;
 $body-background: #00CC63;
 
 body {
-  background-image: url('http://www.bhgconcepts.com/img/board-1226675.jpg');
-  background-size: 100% 100%;
-  color: #00CC63;
+  // background-image: url('http://www.bhgconcepts.com/img/board-1226675.jpg');
+  // background-size: 100% 100%;
+  color: $green;
 }
 .wrapper {
   width: 90%;
@@ -72,6 +72,7 @@ body {
       }
       .question-list-tile {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         .question-list-text {
           margin-top: 10px;
@@ -83,7 +84,7 @@ body {
         a {
           font-weight: bold;
           text-decoration: none;
-          color: #00D163;
+          color: $green;
         }
       }
     }
@@ -136,8 +137,8 @@ body {
       flex-direction: column;
       .update-form {
         margin-top: 10px;
-        background-color: rgba(255,255,255, 0.8);
-        color: $turquoise-trans;
+        // background-color: rgba(255,255,255, 0.8);
+        // color: $turquoise-trans;
         padding: 10px 10px;
         border: 2px solid $grey;
         border-radius: 4px;
@@ -145,7 +146,7 @@ body {
     }
     #new-answer {
       margin-top: 10px;
-      background-color: $turquoise-trans;
+      // background-color: $turquoise-trans;
       padding: 5px 10px;
       border: 2px solid $grey;
       border-radius: 4px;

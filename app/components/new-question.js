@@ -7,7 +7,7 @@ export default Ember.Component.extend({
         text: this.get('text'),
         author: this.get('author'),
         note: this.get("note"),
-        timestamp: this.get('timestamp')
+        timestamp: moment(this.get('timestamp')).format()
       };
       this.sendAction('saveQuestion', params);
     }
