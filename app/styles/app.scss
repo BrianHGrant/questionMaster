@@ -1,11 +1,12 @@
 $grey: grey;
 $green: #00CC63;
-$turquoise-trans: rgba(89,255,216,1);
-$body-background: #FF741A;
+$turquoise-trans: rgba(186, 0, 43, 0.7);
+$body-background: #00CC63;
 
 body {
-  background-image: url('assets/img/question-mark.jpg');
+  background-image: url('http://www.bhgconcepts.com/img/board-1226675.jpg');
   background-size: 100% 100%;
+  color: #00CC63;
 }
 .wrapper {
   width: 90%;
@@ -31,6 +32,13 @@ body {
         height: 100px;
       }
     }
+    .master-title {
+      text-align: center;
+    }
+    .img-circle {
+      background-image: url('http://www.nasa.gov/sites/default/files/images/611573main1_2012_dark-rift-670.jpg');
+      border: 4px inset white;
+    }
   }
   .main-box {
     display: flex;
@@ -55,8 +63,7 @@ body {
     }
     #question-list {
       background-color: $turquoise-trans;
-      // margin-top: 10px;
-      padding: 0 10px;
+      padding: 5px 10px;
       border: 2px solid $grey;
       border-radius: 4px;
       #question-list-heading {
@@ -67,11 +74,16 @@ body {
         display: flex;
         justify-content: space-between;
         .question-list-text {
+          margin-top: 10px;
           font-style: italic;
         }
+        p {
+          font-weight: bold;
+        }
         a {
+          font-weight: bold;
           text-decoration: none;
-          color: black;
+          color: #00D163;
         }
       }
     }
@@ -124,17 +136,25 @@ body {
       flex-direction: column;
       .update-form {
         margin-top: 10px;
-        background-color: $turquoise-trans;
+        background-color: rgba(255,255,255, 0.8);
+        color: $turquoise-trans;
         padding: 10px 10px;
         border: 2px solid $grey;
         border-radius: 4px;
       }
+    }
+    #new-answer {
+      margin-top: 10px;
+      background-color: $turquoise-trans;
+      padding: 5px 10px;
+      border: 2px solid $grey;
+      border-radius: 4px;
     }
   }
 }
 
 @media (max-width: 767px) {
   .wrapper {
-    margin: 300px auto;
+    margin: 100px auto;
   }
 }
