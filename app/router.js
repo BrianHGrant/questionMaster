@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('answer', {path: '/anser/:answer_id'});
   this.route('login');
   this.route('avatar');
+  this.route('user');
 });
 
 export default Router;
