@@ -7,6 +7,12 @@ export default Ember.Route.extend({
   userAuth: Ember.inject.service(),
 
   actions: {
+    createUser(params){
+      var newUser = this.store.createRecord('user', params);
+      newUser.save();
+      this.transitionTo('index');
+    },
+
     loginUser(params) {
       var currentUser;
       var users = this.get("currentModel");

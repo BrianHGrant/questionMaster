@@ -1,0 +1,18 @@
+{{#if signUpUser}}
+  <div id="user-login-form">
+    <form>
+      <h3>Sign Up</h3>
+      <div class="form-group">
+        <label for="author">Your Name:</label>
+        {{input value=newName id="newName" class="form-control"}}
+      </div>
+      <div class="form-group">
+        <label for="text">Email:</label>
+        {{input value=newEmail id="newEmail" class="form-control"}}
+      </div>
+      <button class="btn btn-primary" {{action 'createUser'}}>Sign Up!</button>
+    </form>
+  </div>
+{{else}}
+    <button class="btn btn-primary" {{action 'showSignUpForm'}}>Create Account</button>
+{{/if}}
