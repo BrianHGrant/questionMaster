@@ -17,6 +17,8 @@
     </form>
   </div>
 {{else}}
-  <h4>You must be logged in to ask a question.</h4>
-  {{#link-to 'login'}}Login/Create Account{{/link-to}}
+  <div id="info">
+    <h4><span id="title">questionMaster</span> is a place to share information.<br><br>Ask a question or answer one!<br><br>Join the Community.</h4>
+    {{#link-to 'login' id="login-btn"}}Login/Create Account{{/link-to}}
+  </div>
 {{/if}}
