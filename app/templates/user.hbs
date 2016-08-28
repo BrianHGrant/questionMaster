@@ -1,15 +1,19 @@
 <div class="side-box">
-  <h3>Avatar({{#link-to 'avatar'}}Change{{/link-to}})</h3>
+  <div id="user-info-header">
+    <h3>Avatar({{#link-to 'avatar'}}Change{{/link-to}})</h3>
+  </div>
   <div>
     <hr>
   </div>
-  {{user-avatar}}
+  <div class="avatar-display">
+    {{user-avatar}}
+  </div>
 </div>
 <div class="main-box">
   {{display-username}}
   <div id="question-list">
     <div id="question-list-heading">
-      <h3>Questions</h3>
+      <h3>Questions you've asked:</h3>
     </div>
     <hr>
     {{user-questions}}

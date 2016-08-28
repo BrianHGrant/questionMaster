@@ -1,6 +1,14 @@
 <div class="question-list-tile">
-  <h4 class="question-list-text">{{#link-to 'question' question.id update="update"}}{{question.text}}{{/link-to}}</h4>
-  <p>{{question.user.name}}</p>
+  <div class="info-text">
+    <h4 class="question-list-text"><span class="question-label">Question:</span> {{#link-to 'question' question.id update="update"}}{{question.text}}{{/link-to}}</h4>
+    <p class="question-list-text"><span class="question-label">Date:</span> {{question.timestamp}}</p>
+  </div>
+  <div class="img-avatar">
+    {{#if userAuth.ifAuth}}
+      {{avatar-display question.user.avatar}}
+      <p class="question-list-text">{{question.user.name}}</p>
+    {{/if}}
+  </div>
 </div>
 
 <hr>
