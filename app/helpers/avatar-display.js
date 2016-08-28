@@ -21,19 +21,19 @@ export function avatarDisplay(params) {
       avatar_src = "cat-1424748.png";
       break;
     case 6:
-      avatar_src = "man-1458576.png";
+      avatar_src = "afro-american-man.png";
       break;
     case 7:
-      avatar_src = "man-1458576.png";
+      avatar_src = "girl-1424685.png";
       break;
     case 8:
-      avatar_src = "man-1458576.png";
+      avatar_src = "girl-1457006.png";
       break;
     case 9:
       avatar_src = "tiger-1454631.png";
       break;
     case 10:
-      avatar_src = "man-1458576.png";
+      avatar_src = "woman-book-01.png";
       break;
   }
 
