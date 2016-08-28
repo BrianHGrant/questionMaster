@@ -37,7 +37,7 @@ export function avatarDisplay(params) {
       break;
   }
 
-  return Ember.String.htmlSafe('<img src="http://www.bhgconcepts.com/img/avatars/'+ avatar_src +'" class="img-responsive img-rounded img-avatar">')
+  return Ember.String.htmlSafe('<img src="http://www.bhgconcepts.com/img/avatars/'+ avatar_src +'" class="img-responsive img-rounded img-avatar">');
 }
 
 export default Ember.Helper.helper(avatarDisplay);

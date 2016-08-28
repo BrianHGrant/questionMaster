@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('user')
+    return this.store.findAll('user');
   },
   userAuth: Ember.inject.service(),
 
@@ -17,7 +17,6 @@ export default Ember.Route.extend({
     loginUser(params) {
       var currentUser;
       var users = this.get("currentModel");
-      debugger;
       users.forEach(function(user) {
         if(user.get('email') === params.email) {
           currentUser = user;

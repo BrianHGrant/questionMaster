@@ -12,9 +12,9 @@ export default Ember.Component.extend({
         name: this.get("newName"),
         email: this.get("newEmail"),
         avatar: Math.round(Math.random() *10)
-      }
+      };
       this.set('signUpUser', false);
-      this.sendAction('createUser', params)
+      this.sendAction('createUser', params);
     }
   }
 });
