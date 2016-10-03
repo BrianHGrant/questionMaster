@@ -1,7 +1,6 @@
 # Question-master
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Ember based question and answer forum, independent review project which makes use of helpers and calculated properties.
 
 ## Prerequisites
 
